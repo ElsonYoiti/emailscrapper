@@ -1,13 +1,13 @@
 
 %{
 #include <stdio.h>
+#include<stdlib.h>
 %}
 
 
 %%
 
-[A-za-z0-9]+[.][A-za-z0-9]*@[A-za-z0-9]+[.][A-za-z0-9]*
-{
+[A-za-z0-9]+[.][A-za-z0-9]*@[A-za-z0-9]+[.][A-za-z0-9]*{
   printf("%s\n", yytext);
 }
 
